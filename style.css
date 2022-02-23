@@ -1,0 +1,116 @@
+:root{
+--default-color: linear-gradient(90deg, #62f5fa, #fd7575);
+}
+
+
+
+body{
+    margin:0;
+    padding:150px;
+    font-family: sans-serif;
+    background: var(--default-color);
+    display:flex;
+    height: 100hv;
+    justify-content: center;
+    display:flex;
+    
+   
+}
+
+.container{
+    min-height: 400px;
+    width: 300px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 32px;
+    border-radius:8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title{
+    margin-bottom: 32px;
+    color:black;
+
+}
+
+.form{
+    width:100px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.login{
+    height: 48px;
+    width:200px;
+    box-sizing: border-box;
+    padding-left: 8px;
+    border:unset;
+    outline: none;
+}
+
+.login:focus + .border::after{
+    width: 100%;
+}
+
+.border{
+    height:1px;
+    width:200px;
+    margin-bottom: 16px;
+    background-color: #929292;
+    transition: .3s ease-in-out;
+
+
+}
+
+.border::after{
+    content:'';
+    display:block;
+    height:1px;
+    width:0px;
+    margin-bottom: 16px;
+    background: var(--default-color);
+    transition: .3s ease-in-out;
+
+
+}
+
+
+.button{
+    height: 48px;
+    width:200px;
+    outline: none;
+    background: linear-gradient(90deg, #62f5fa, #fd7575, #62f5fa);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    border:unset;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button:hover{
+
+    background-position: right;
+}
+
+
+.senha{
+    
+    width:200px;
+    font-size: 12px;
+    color: #929292;
+    text-align: center;
+    text-decoration: none;
+
+}
